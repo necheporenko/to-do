@@ -1,0 +1,142 @@
+body {
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.42857;
+  background: #edf0f1;
+  padding: 80px 0 0 0; }
+
+body, input, button {
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  padding: 15px;
+  background: #25b99a;
+  -webkit-border-bottom-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+  top: 0;
+  z-index: 100; }
+  header input {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0 60px 0 18px;
+    -webkit-border-top-left-radius: 5px;
+            border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+    -webkit-border-top-right-radius: 25px;
+            border-top-right-radius: 25px;
+    -webkit-border-bottom-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+    border: 0;
+    color: #fff;
+    outline: none; }
+  header input::-webkit-input-placeholder {
+    color: #f1f1f1; }
+  header button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+    outline: none; }
+    header button svg {
+      width: 17px;
+      height: 17px;
+      color: #25b99a;
+      fill: #25b99a; }
+
+.container {
+  padding: 15px; }
+  .container ul {
+    width: 100%; }
+    .container ul li {
+      width: 100%;
+      min-height: 50px;
+      font-weight: 500;
+      color: #444;
+      line-height: 22px;
+      background: #fff;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      position: relative;
+      -webkit-box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.1);
+              box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.1);
+      padding: 14px 100px 14px 14px;
+      margin-bottom: 10px; }
+      .container ul li .buttons {
+        position: absolute;
+        top: 0;
+        right: 0; }
+        .container ul li .buttons button:last-of-type:before {
+          content: '';
+          width: 1px;
+          height: 30px;
+          position: absolute;
+          top: 10px;
+          left: 0;
+          background: #edf0f1; }
+        .container ul li .buttons button {
+          height: 50px;
+          width: 50px;
+          background: none;
+          border: none;
+          position: relative;
+          cursor: pointer; }
+          .container ul li .buttons button svg {
+            width: 23px;
+            height: 23px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -11px 0 0 -11px; }
+        .container ul li .buttons .remove .fill {
+          fill: #c0cecb; }
+        .container ul li .buttons .remove:hover .fill {
+          fill: #e85656; }
+        .container ul li .buttons .complete .fill {
+          fill: #25b99a; }
+        .container ul li .buttons .complete svg {
+          -webkit-border-radius: 11px;
+                  border-radius: 11px;
+          border: 1.5px solid #25b99a; }
+        .container ul li .buttons .complete:hover svg {
+          -webkit-transition: background 0.2s ease;
+          transition: background 0.2s ease;
+          background: #25b99a; }
+        .container ul li .buttons .complete:hover .fill {
+          fill: #fff; }
+  .container #completed:not(:empty) {
+    position: relative;
+    padding: 60px 0 0 0; }
+  .container #completed:not(:empty):before {
+    content: '';
+    width: 150px;
+    height: 2px;
+    background: #dcdada;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin: 0 0 0 -75px; }
+  .container #completed .complete svg {
+    -webkit-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+    background: #25b99a; }
+  .container #completed .complete .fill {
+    fill: #fff; }
+
+.noFill {
+  fill: none; }
